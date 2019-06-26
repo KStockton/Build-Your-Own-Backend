@@ -6,18 +6,22 @@ export const teams = [
     { 
       "name": "Hayes, Jaxson", 
       "school": "Texas",
-      "position": "C"
+      "position": "C",
+      "id": "k"
     }, 
     { 
       "name": "Louzada Silva, Marcos", 
       "school": "SESI Franca (Brazil)",
-      "position": "SG"
+      "position": "SG",
+      "id": "al"
     }, 
     { 
       "name": "Reddish, Cam", 
       "school": "Duke",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "ay"
+    }],
+    "id": 1  
   },
   {
     "team": "Boston Celtics",
@@ -26,23 +30,28 @@ export const teams = [
     { 
       "name": "Langford, Romeo", 
       "school": "Indiana",
-      "position": "SF"
+      "position": "SF",
+      "id": "ai"
     }, 
     { 
       "name": "Thybulle, Matisse", 
       "school": "Washington",
-      "position": "SF"
+      "position": "SF",
+      "id": "bg"
     }, 
     { 
       "name": "Waters, Tremont", 
       "school": "LSU",
-      "position": "PF"
+      "position": "PF",
+      "id": "bi"
     }, 
     { 
       "name": "Williams, Grant", 
       "school": "Tennessee",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "bl"
+    }],
+    "id": 2  
   },
   {
     "team": "Brooklyn Nets",
@@ -51,18 +60,22 @@ export const teams = [
     {
       "name": "Alexander-Walker, Nickeil",
       "school": "Virginia Tech",
-      "position": "SG"
+      "position": "SG",
+       "id": "a"
     }, 
     { 
       "name": "Claxton, Nicolas", 
       "school": "Georgia",
-      "position": "C"
+      "position": "C",
+      "id": "m"
     }, 
     { 
       "name": "Kabengele, Mfiondu", 
       "school": "Florida State",
-      "position": "C"
-    }]
+      "position": "C",
+      "id": "af"
+    }],
+    "id": 3  
   },
   {
     "team": "Charlotte Hornets",
@@ -71,18 +84,22 @@ export const teams = [
     { 
       "name": "Martin, Cody", 
       "school": "Nevada",
-      "position": "SG"
+      "position": "SG",
+      "id": "ao"
     }, 
     { 
       "name": "McDaniels, Jalen", 
       "school": "San Diego State",
-      "position": "SF"
+      "position": "SF",
+      "id": "ap"
     }, 
     { 
       "name": "Washington, PJ", 
       "school": "Kentucky",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "bh"
+    }],
+    "id": 4  
   },
   {
     "team": "Chicago Bulls",
@@ -91,13 +108,16 @@ export const teams = [
     { 
       "name": "Gafford, Daniel",
       "school": "Arkansas",
-      "position": "PF"
+      "position": "PF",
+      "id": "u"
     }, 
     { 
       "name": "White, Coby", 
       "school": "North Carolina",
-      "position": "PG"
-    }]
+      "position": "PG",
+      "id": "bk"
+    }],
+    "id": 5  
   },
   {
     "team": "Cleveland Cavaliers",
@@ -106,13 +126,16 @@ export const teams = [
     { 
       "name": "Garland, Darius",
       "school": "Vanderbilt",
-      "position": "PG"
+      "position": "PG",
+      "id": "v"
     }, 
     { 
       "name": "Windler, Dylan", 
       "school": "Belmont",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "bn"
+    }],
+    "id": 6  
   },
   {
     "team": "Dallas Mavericks",
@@ -121,8 +144,10 @@ export const teams = [
     { 
       "name": "Sirvydis, Deividas", 
       "school": "Vilnius Rytas (Lithuania)",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "be"
+    }],
+    "id": 7  
   },
   {
     "team": "Denver Nuggets",
@@ -131,18 +156,22 @@ export const teams = [
     { 
       "name": "Porter Jr., Michael",
       "school": "Missouri",
-      "position": "SF"
+      "position": "SF",
+      "id": "h"
     }, 
     { 
       "name": "Murray, Jamal", 
       "school": "Kentucky",
-      "position": "SG"
+      "position": "SG",
+      "id": "ah"
     }, 
     { 
       "name": "Harris, Gary", 
       "school": "Michigan State University",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "aj"
+    }],
+    "id": 8  
   },
   {
     "team": "Detroit Pistons",
@@ -151,13 +180,16 @@ export const teams = [
     { 
       "name": "Doumbouya, Sekou",
       "school": "Limoges (France)",
-      "position": "SF"
+      "position": "SF",
+      "id": "q"
     }, 
     { 
       "name": "Roby, Isaiah", 
       "school": "Nebraska",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "az"
+    }],
+    "id": 9  
   },
   {
     "team": "Golden State Warriors",
@@ -166,18 +198,22 @@ export const teams = [
     { 
       "name": "Oni, Miye", 
       "school": "Yale",
-      "position": "SG"
+      "position": "SG",
+      "id": "au"
     }, 
     { 
       "name": "Paschall, Eric", 
       "school": "Villanova",
-      "position": "PF"
+      "position": "PF",
+      "id": "av"
     }, 
     { 
       "name": "Poole, Jordan", 
       "school": "Michigan",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "aw"
+    }],
+    "id": 10  
   },
   {
     "team": "Houston Rockets",
@@ -186,8 +222,10 @@ export const teams = [
     { 
       "name": "Faried, Kenneth", 
       "school": "Morehead St",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "ag"
+    }],
+    "id": 11  
   },
   {
     "team": "Indiana Pacers",
@@ -196,13 +234,16 @@ export const teams = [
     { 
       "name": "Bitadze, Goga", 
       "school": "KK Mega Leks (Serbia)",
-      "position": "C"
+      "position": "C",
+      "id": "d"
     }, 
     { 
       "name": "Brantley, Jarrell",
       "school": "College of Charleston",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "i"
+    }],
+    "id": 12  
   },
   {
     "team": "Los Angeles Clippers",
@@ -211,13 +252,16 @@ export const teams = [
     { 
       "name": "Hands, Jaylen",
       "school": "Texas",
-      "position": "C"
+      "position": "C",
+      "id": "y"
     }, 
     { 
       "name": "Mann, Terance", 
       "school": "Florida State",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "am"
+    }],
+    "id": 13  
   },
   {
     "team": "Los Angeles Lakers",
@@ -226,8 +270,10 @@ export const teams = [
     { 
       "name": "Hunter, De'Andre", 
       "school": "Virginia",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "z"
+    }],
+    "id": 14  
   },
   {
     "team": "Memphis Grizzlies",
@@ -236,8 +282,10 @@ export const teams = [
     { 
       "name": "Morant, Ja", 
       "school": "Murray State",
-      "position": "PG"
-    }]
+      "position": "PG",
+      "id": "aq"
+    }],
+    "id": 15  
   },
   {
     "team": "Miami Heat",
@@ -246,13 +294,16 @@ export const teams = [
   { 
     "name": "Bol, Bol", 
     "school": "Oregon",
-    "position": "C"
+    "position": "C",
+    "id": "e"
   }, 
   { 
     "name": "Herro, Tyler",
     "school": "Kentucky",
     "position": "SG",
-  }]
+    "id": "p"
+  }],
+    "id": 16 
   },
   {
     "team": "Milwaukee Bucks",
@@ -261,8 +312,10 @@ export const teams = [
     { 
       "name": "Porter Jr., Kevin", 
       "school": "USC",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "ax"
+    }],
+    "id": 17  
   },
   {
     "team": "Minnesota Timberwolves",
@@ -271,13 +324,16 @@ export const teams = [
     { 
       "name": "Johnson, Cameron", 
       "school": "North Carolina", 
-      "position": "SF"
+      "position": "SF",
+      "id": "ad"
     }, 
     { 
       "name": "Nowell, Jaylen", 
       "school": "Washington",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "ar"
+    }],
+    "id": 18
   },
   {
     "team": "New Orleans Pelicans",
@@ -286,18 +342,22 @@ export const teams = [
     { 
       "name": "Bone, Jordan",
       "school": "Tennessee",
-      "position": "SG"
+      "position": "SG",
+      "id": "f"
     }, 
     { 
       "name": "Smailagic, Alen", 
       "school": "Santa Cruz Warriors (NBA G League)",
-      "position": "PF"
+      "position": "PF",
+      "id": "bf"
     }, 
     { 
       "name": "Williamson, Zion", 
       "school": "Duke",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "bm"
+    }],
+    "id": 19
   },
   {
     "team": "New York Knicks",
@@ -306,13 +366,16 @@ export const teams = [
     { 
       "name": "Barrett, RJ",
       "school": "Duke",
-      "position": "SF"
-    }, 
+      "position": "SF",
+      "id": "b"
+      }, 
     { 
-      "name": "Guy, Kyle",
-      "school": "Virginia",
-      "position": "SG"
-    }]
+        "name": "Guy, Kyle",
+        "school": "Virginia",
+        "position": "SG",
+        "id": "w"
+      }],
+    "id": 20 
   },
   {
     "team": "Oklahoma City Thunder",
@@ -321,8 +384,10 @@ export const teams = [
     { 
       "name": "Clarke, Brandon",
       "school": "Gonzaga",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "l"
+    }],
+    "id": 21 
   },
   {
     "team": "Orlando Magic",
@@ -331,13 +396,16 @@ export const teams = [
     { 
       "name": "Horton-Tucker, Talen",
       "school": "Iowa State",
-      "position": "SG"
+      "position": "SG",
+      "id": "s"
     }, 
     { 
       "name": "Okeke, Chuma", 
       "school": "Auburn",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "as"
+    }],
+    "id": 22  
   },
   {
     "team": "Philadelphia 76ers",
@@ -346,28 +414,34 @@ export const teams = [
     { 
       "name": "Edwards, Carsen",
       "school": "Purdue",
-      "position": "PG"
+      "position": "PG",
+      "id": "r"
     }, 
     { 
       "name": "Fernando, Bruno",
       "school": "Maryland",
-      "position": "C"
+      "position": "C",
+      "id": "t"
     }, 
     { 
       "name": "Jerome, Ty", 
       "school": "Virginia",
-      "position": "PG"
+      "position": "PG",
+      "id": "ac"
     }, 
     { 
       "name": "Schofield, Admiral", 
       "school": "Tennessee",
-      "position": "SF"
+      "position": "SF",
+      "id": "bc"
     }, 
     { 
       "name": "Shayok, Marial", 
       "school": "Iowa State",
-      "position": "SG"
+      "position": "SG",
+      "id": "bd"
     }],
+    "id": 23  
   },
   {
     "team": "Phoenix Suns",
@@ -376,8 +450,10 @@ export const teams = [
     { 
       "name": "Okpala, KZ", 
       "school": "Stanford",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "at"
+    }],
+    "id": 24 
   },
   {
     "team": "Portland Trail Blazers",
@@ -386,8 +462,10 @@ export const teams = [
     { 
       "name": "Little, Nassir", 
       "school": "North Carolina",
-      "position": "SF"
-    }]
+      "position": "SF",
+      "id": "ak"
+    }],
+    "id": 25 
   },
   {
     "team": "Sacramento Kings",
@@ -396,18 +474,22 @@ export const teams = [
     { 
       "name": "Brazdeikis, Ignas",
       "school": "Michigan",
-      "position": "SF"
+      "position": "SF",
+      "id": "j"
     }, 
     { 
       "name": "James, Justin", 
       "school": "Wyoming",
-      "position": "SG"
+      "position": "SG",
+      "id": "ab"
     }, 
     { 
       "name": "Marinkovic, Vanja", 
       "school": "Partizan Belgrade",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "an"
+    }],
+    "id": 26
   },
   {
     "team": "San Antonio Spurs",
@@ -416,18 +498,22 @@ export const teams = [
     { 
       "name": "Johnson, Keldon", 
       "school": "Kentucky",
-      "position": "SF"
+      "position": "SF",
+      "id": "ae"
     }, 
     { 
       "name": "Samanic, Luka", 
       "school": "KK Olimpija (Slovenia)",
-      "position": "PF"
+      "position": "PF",
+      "id": "ba"
     }, 
     { 
       "name": "Weatherspoon, Quinndary", 
       "school": "Missouri State",
-      "position": "SG"
-    }]
+      "position": "SG",
+      "id": "bj"
+    }],
+    "id": 27  
   },
   {
     "team": "Toronto Raptors",
@@ -436,8 +522,10 @@ export const teams = [
     { 
       "name": "Hernandez , Dewan",
       "school": "Miami",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "o"
+    }],
+    "id": 28  
   },
   {
     "team": "Washington Wizards",
@@ -446,8 +534,10 @@ export const teams = [
     { 
       "name": "Hachimura, Rui",
       "school": "Gonzaga",
-      "position": "PF"
-    }]
+      "position": "PF",
+      "id": "x"
+    }],
+    "id": 29  
   },
   {
     "team": "Utah Jazz",
@@ -456,14 +546,16 @@ export const teams = [
     { 
       "name": "Bazley, Darius", 
       "school": "Princeton High School (OH)",
-      "position": "PF"
+      "position": "PF",
+      "id": "c"
     }, 
     { 
       "name": "Wright-Foreman, Justin",
       "school": "Hofstra",
-      "position": "PG"
-    }]
-  }
-]
+      "position": "PG",
+      "id": "g"
+    }],
+    "id": 30 
+  }]
 
   
