@@ -1,4 +1,4 @@
-const newPlayers = [ 
+const nbaplayer_id = [ 
   {
    "name": "Alexander-Walker, Nickeil",
    "school": "Virginia Tech",
@@ -381,9 +381,7 @@ const newPlayers = [
     "school": "Belmont",
     "position": "SF",
     "id": "bn"
-  },
-
-  ]
+  }]
 
   export const positions = [
     'PG',
@@ -396,152 +394,152 @@ const newPlayers = [
   export const teams = [
   {
     "team": "Atlanta Hawks",
-    "players": [ "k", "al", "ay" ],
+    "player_id": [ "k", "al", "ay" ],
     "id": 1  
   },
   {
     "team": "Boston Celtics",
-    "players": [ "ai", "bg", "bi", "bl" ],
+    "player_id": [ "ai", "bg", "bi", "bl" ],
     "id": 2  
   },
   {
     "team": "Brooklyn Nets",
-    "players": [ "a", "m", "af" ],
+    "player_id": [ "a", "m", "af" ],
     "id": 3  
   },
   {
     "team": "Charlotte Hornets",
-    "players": [ "ao", "ap", "bh"],
+    "player_id": [ "ao", "ap", "bh"],
     "id": 4  
   },
   {
     "team": "Chicago Bulls",
-    "players": [ "u", "bk" ],
+    "player_id": [ "u", "bk" ],
     "id": 5  
   },
   {
     "team": "Cleveland Cavaliers",
-    "players": [ "v", "bn" ],
+    "player_id": [ "v", "bn" ],
     "id": 6  
   },
   {
     "team": "Dallas Mavericks",
-    "players": [ "be" ],
+    "player_id": [ "be" ],
     "id": 7  
   },
   {
     "team": "Denver Nuggets",
-    "players": [ "h", "ah", "aj"],
+    "player_id": [ "h", "ah", "aj"],
     "id": 8  
   },
   {
     "team": "Detroit Pistons",
-    "players": [ "q", "az" ],
+    "player_id": [ "q", "az" ],
     "id": 9  
   },
   {
     "team": "Golden State Warriors",
-    "players": [ "au", "av", "aw" ],
+    "player_id": [ "au", "av", "aw" ],
     "id": 10  
   },
   {
     "team": "Houston Rockets",
-    "players": [ "ag"],
+    "player_id": [ "ag"],
     "id": 11  
   },
   {
     "team": "Indiana Pacers",
-    "players": [ "d", "i" ],
+    "player_id": [ "d", "i" ],
     "id": 12  
   },
   {
     "team": "Los Angeles Clippers",
-    "players": [ "y", "am" ],
+    "player_id": [ "y", "am" ],
     "id": 13  
   },
   {
     "team": "Los Angeles Lakers",
-    "players": [ "z"],
+    "player_id": [ "z"],
     "id": 14  
   },
   {
     "team": "Memphis Grizzlies",
-    "players": [ "aq" ],
+    "player_id": [ "aq" ],
     "id": 15  
   },
   {
     "team": "Miami Heat",
-    "players": [ "e", "p" ],
+    "player_id": [ "e", "p" ],
     "id": 16 
   },
   {
     "team": "Milwaukee Bucks",
-    "players": [ "ax" ],
+    "player_id": [ "ax" ],
     "id": 17  
   },
   {
     "team": "Minnesota Timberwolves",
-    "players": [ "ad", "ar" ],
+    "player_id": [ "ad", "ar" ],
     "id": 18
   },
   {
     "team": "New Orleans Pelicans",
-    "players": [ "f", "bf", "bm" ],
+    "player_id": [ "f", "bf", "bm" ],
     "id": 19
   },
   {
     "team": "New York Knicks",
-    "players": [ "b", "w" ],
+    "player_id": [ "b", "w" ],
     "id": 20 
   },
   {
     "team": "Oklahoma City Thunder",
-    "players": [ "l" ],
+    "player_id": [ "l" ],
     "id": 21 
   },
   {
     "team": "Orlando Magic",
-    "players": [ "s", "as" ],
+    "player_id": [ "s", "as" ],
     "id": 22  
   },
   {
     "team": "Philadelphia 76ers",
-    "players": [ "r", "t", "ac", "bc", "bd" ],
+    "player_id": [ "r", "t", "ac", "bc", "bd" ],
     "id": 23  
   },
   {
     "team": "Phoenix Suns",
-    "players": [ "at" ],
+    "player_id": [ "at" ],
     "id": 24 
   },
   {
     "team": "Portland Trail Blazers",
-    "players": [ "ak" ],
+    "player_id": [ "ak" ],
     "id": 25 
   },
   {
     "team": "Sacramento Kings",
-    "players": [ "j", "ab", "an" ],
+    "player_id": [ "j", "ab", "an" ],
     "id": 26
   },
   {
     "team": "San Antonio Spurs",
-    "players": [ "ae", "ba", "bj" ],
+    "player_id": [ "ae", "ba", "bj" ],
     "id": 27  
   },
   {
     "team": "Toronto Raptors",
-    "players": [ "o" ],
+    "player_id": [ "o" ],
     "id": 28  
   },
   {
     "team": "Washington Wizards",
-    "players": [ "x" ],
+    "player_id": [ "x" ],
     "id": 29  
   },
   {
     "team": "Utah Jazz",
-    "players": [ "c", "g" ],
+    "player_id": [ "c", "g" ],
     "id": 30 
   }]
   
