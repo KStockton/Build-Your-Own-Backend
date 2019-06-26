@@ -19,7 +19,8 @@ const teams = [
       position: "SF"
     }]
   },
-  {    team: "Boston Celtics",
+  { 
+    team: "Boston Celtics",
     conference: "Eastern",
     players: [
     { 
