@@ -1,4 +1,4 @@
-export const teams = [
+const teams = [
   {
     "team": "Atlanta Hawks",
     "conference": "Eastern",

@@ -13,7 +13,7 @@ exports.up = function(knex) {
       table.increments('id').primary();
       table.integer('team_id').unsigned();
       table.foreign('team_id')
-        .references('teams.id')
+        .references('teams.id') 
       table.string('name');
       table.string('school');
       table.string('position');
