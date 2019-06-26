@@ -1,5 +1,6 @@
 export const teams = [
   {
+    "id": 1,
     "team": "Atlanta Hawks",
     "conference": "Eastern",
     "players": [
@@ -20,6 +21,7 @@ export const teams = [
     }]
   },
   {
+    "id": 2,
     "team": "Boston Celtics",
     "conference": "Eastern",
     "players": [
@@ -45,6 +47,7 @@ export const teams = [
     }]
   },
   {
+    "id": 3,
     "team": "Brooklyn Nets",
     "conference": "Eastern",
     "players": [
@@ -65,6 +68,7 @@ export const teams = [
     }]
   },
   {
+    "id": 4,
     "team": "Charlotte Hornets",
     "conference": "Eastern",
     "players": [
@@ -85,6 +89,7 @@ export const teams = [
     }]
   },
   {
+    "id": 5,
     "team": "Chicago Bulls",
     "conference": "Eastern",
     "players": [
@@ -100,6 +105,7 @@ export const teams = [
     }]
   },
   {
+    "id": 6,
     "team": "Cleveland Cavaliers",
     "conference": "Eastern",
     "players": [
@@ -115,6 +121,7 @@ export const teams = [
     }]
   },
   {
+    "id": 7,
     "team": "Dallas Mavericks",
     "conference": "Western",
     "players": [
@@ -125,6 +132,7 @@ export const teams = [
     }]
   },
   {
+    "id": 8,
     "team": "Denver Nuggets",
     "conference": "Western",
     "players": [
@@ -145,6 +153,7 @@ export const teams = [
     }]
   },
   {
+    "id": 9,
     "team": "Detroit Pistons",
     "conference": "Eastern",
     "players": [
@@ -160,6 +169,7 @@ export const teams = [
     }]
   },
   {
+    "id": 10,
     "team": "Golden State Warriors",
     "conference": "Western",
     "players": [
@@ -180,6 +190,7 @@ export const teams = [
     }]
   },
   {
+    "id": 11,
     "team": "Houston Rockets",
     "conference": "Western",
     "players": [
@@ -190,6 +201,7 @@ export const teams = [
     }]
   },
   {
+    "id": 12,
     "team": "Indiana Pacers",
     "conference": "Eastern",
     "players": [
@@ -205,6 +217,7 @@ export const teams = [
     }]
   },
   {
+    "id": 13,
     "team": "Los Angeles Clippers",
     "conference": "Western",
     "players": [
@@ -220,6 +233,7 @@ export const teams = [
     }]
   },
   {
+    "id": 14,
     "team": "Los Angeles Lakers",
     "conference": "Western",
     "players": [
@@ -230,6 +244,7 @@ export const teams = [
     }]
   },
   {
+    "id": 15,
     "team": "Memphis Grizzlies",
     "conference": "Western",
     "players": [
@@ -240,6 +255,7 @@ export const teams = [
     }]
   },
   {
+    "id": 16,
     "team": "Miami Heat",
     "conference": "Eastern",
     "players": [
@@ -255,6 +271,7 @@ export const teams = [
   }]
   },
   {
+    "id": 17,
     "team": "Milwaukee Bucks",
     "conference": "Eastern",
     "players": [
@@ -265,6 +282,7 @@ export const teams = [
     }]
   },
   {
+    "id": 18,
     "team": "Minnesota Timberwolves",
     "conference": "Western",
     "players": [
@@ -280,6 +298,7 @@ export const teams = [
     }]
   },
   {
+    "id": 19,
     "team": "New Orleans Pelicans",
     "conference": "Western",
     "players": [
@@ -300,6 +319,7 @@ export const teams = [
     }]
   },
   {
+    "id": 20,
     "team": "New York Knicks",
     "conference": "Eastern",
     "players": [
@@ -315,6 +335,7 @@ export const teams = [
     }]
   },
   {
+    "id": 21,
     "team": "Oklahoma City Thunder",
     "conference": "Western",
     "players": [
@@ -325,6 +346,7 @@ export const teams = [
     }]
   },
   {
+    "id": 22,
     "team": "Orlando Magic",
     "conference": "Eastern",
     "players": [
@@ -340,6 +362,7 @@ export const teams = [
     }]
   },
   {
+    "id": 23,
     "team": "Philadelphia 76ers",
     "conference": "Eastern",
     "players": [
@@ -370,6 +393,7 @@ export const teams = [
     }],
   },
   {
+    "id": 24,
     "team": "Phoenix Suns",
     "conference": "Western",
     "players": [
@@ -380,6 +404,7 @@ export const teams = [
     }]
   },
   {
+    "id": 25,
     "team": "Portland Trail Blazers",
     "conference": "Western",
     "players": [
@@ -390,6 +415,7 @@ export const teams = [
     }]
   },
   {
+    "id": 26,
     "team": "Sacramento Kings",
     "conference": "Western",
     "players": [
@@ -410,6 +436,7 @@ export const teams = [
     }]
   },
   {
+    "id": 27,
     "team": "San Antonio Spurs",
     "conference": "Western",
     "players": [
@@ -430,6 +457,7 @@ export const teams = [
     }]
   },
   {
+    "id": 28,
     "team": "Toronto Raptors",
     "conference": "Eastern",
     "players": [
@@ -440,6 +468,7 @@ export const teams = [
     }]
   },
   {
+    "id": 29,
     "team": "Washington Wizards",
     "conference": "Eastern",
     "players": [
@@ -450,6 +479,7 @@ export const teams = [
     }]
   },
   {
+    "id": 30,
     "team": "Utah Jazz",
     "conference": "Western",
     "players": [
