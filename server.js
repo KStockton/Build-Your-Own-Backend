@@ -51,7 +51,7 @@ app.get('/api/v1/players/:id',(request, response) => {
     })
 });
 
-app.get('/api/v1/team/single/:team_id', (request, response) => {
+app.get('/api/v1/team/roster/:team_id', (request, response) => {
   const { team_id } = request.params
   
   let words = team_id.toLowerCase().split('_')
@@ -66,7 +66,9 @@ app.get('/api/v1/team/single/:team_id', (request, response) => {
         let nbaTeamId = teams[0].id
         
         database('players').where('team_id', nbaTeamId).select()
-        .then(players)
+        .then(players => {
+          if(players.length) response.status(200).json(players)
+        })
       }
     })
 
