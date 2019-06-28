@@ -3,7 +3,7 @@ const configuration = require('./knexfile')[environment]
 const database = require('knex')(configuration);
 const express = require('express')
 const app = express();
-const port = process.env.PORT || 3000
+const PORT= process.env.PORT || 3000
 
 app.use(express.json())
 
@@ -152,6 +152,6 @@ app.delete('/api/v1/teams', (request, response) => {
     return response.status(200).json('Success team has been removed')
 });
 
-app.listen(3000, () => {
-  console.log(`App is running 👻 on port ${port}`)
+app.listen(PORT, () => {
+  console.log(`App is running 👻 on port ${PORT}`)
 })
