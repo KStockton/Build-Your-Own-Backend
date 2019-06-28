@@ -152,23 +152,6 @@ app.delete('/api/v1/teams', (request, response) => {
     return response.status(200).json('Success team has been removed')
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3000, () => {
   console.log(`App is running 👻 on port ${port}`)
 })
