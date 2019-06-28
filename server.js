@@ -7,7 +7,7 @@ const PORT= process.env.PORT || 3000
 
 app.use(express.json())
 
-
+// Get all teams
 app.get('/api/v1/teams', (request, response) => {
   database('teams').select()
     .then((teams) => {
@@ -18,6 +18,7 @@ app.get('/api/v1/teams', (request, response) => {
     })
 });
 
+// Get all players
 app.get('/api/v1/players', (request, response) => {
   database('players').select()
     .then((players) => {
@@ -153,5 +154,5 @@ app.delete('/api/v1/teams', (request, response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`App is running 👻 on port ${PORT}`)
+  console.log(`App is running 👻 on port ${dPORT}`)
 })
