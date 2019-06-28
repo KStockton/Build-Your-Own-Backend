@@ -81,7 +81,7 @@ app.post('/api/v1/player', (request, response) => {
   const player = request.body
   let teamId
 
- for( let requiredParameter of ['team', 'school', 'position', 'name']) {
+  for( let requiredParameter of ['team', 'school', 'position', 'name']) {
 
   if(!player[requiredParameter]) 
     return response
@@ -116,7 +116,27 @@ app.post('/api/v1/player', (request, response) => {
 // let result = name.split(' ').reverse()
 // let databaseName = result.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(', ')
 
+app.post('/api/v1/team', (request, response) => {
+  const teamInfo = request.body
 
+  for(let requiredParameter of ['team', 'conference']){
+
+    if(!teamInfo[requiredParameter])
+      return response
+        .status(422)
+        .send({error: `Expected format: { team : <String> , conference: <String> } 
+        Please include ${requiredParameter}`})
+  }
+  database('teams').insert(teamInfo, 'id')
+    .then(team => {
+      return response.status(201).json({ id: team[0]})
+    })
+    .catch(error => {
+      return response.status(500).json(error)
+    })
+
+  
+})
 
 
 
