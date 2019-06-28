@@ -42,4 +42,4 @@ exports.seed = function(knex, Promise) {
     })
     .catch(error => console.log(`Error seeding data: ${error}`))
   };
-  
+   
