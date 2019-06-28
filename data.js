@@ -119,7 +119,8 @@ const teams = [
       position: "SF"
     }]
   },
-  {    team: "Denver Nuggets",
+  { 
+    team: "Denver Nuggets",
     conference: "Western",
     players: [
     { 

@@ -31,6 +31,8 @@ exports.seed = function(knex, Promise) {
 
   return knex('players').del() // delete players first
     .then(() => knex('teams').del()) // then delete teams
+    .then(() => knex.raw('TRUNCATE TABLE players RESTART IDENTITY CASCADE'))
+    .then(() => knex.raw('TRUNCATE TABLE teams RESTART IDENTITY CASCADE'))
     .then(() => {
       let teamPromises = [];
 
@@ -42,4 +44,4 @@ exports.seed = function(knex, Promise) {
     })
     .catch(error => console.log(`Error seeding data: ${error}`))
   };
-  
+   
