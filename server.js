@@ -116,7 +116,7 @@ app.post('/api/v1/player', (request, response) => {
 // let result = name.split(' ').reverse()
 // let databaseName = result.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(', ')
 
-app.post('/api/v1/team', (request, response) => {
+app.post('/api/v1/teams', (request, response) => {
   const teamInfo = request.body
 
   for(let requiredParameter of ['team', 'conference']){
@@ -134,9 +134,23 @@ app.post('/api/v1/team', (request, response) => {
     .catch(error => {
       return response.status(500).json(error)
     })
+});
 
-  
-})
+app.delete('/api/v1/teams', (request, response) => {
+  const idInfo = request.body
+  let teamId = parseInt(idInfo.id)
+
+  for(let requiredParameter of ['id']){
+    
+    if(!idInfo[requiredParameter])
+      return response
+        .status(422)
+        .send({error: `Expected format: { id : <Number> } Please include ${requiredParameter}`})
+  }
+  database('teams').where('id', teamId)
+    .delete()
+    return response.status(200).json('Success team has been removed')
+});
 
 
 
