@@ -9,23 +9,23 @@ app.use(express.json())
 
 // Get all teams
 app.get('/api/v1/teams', (request, response) => {
-  database('teams').select()
+  database('teams').select()// select team database
     .then((teams) => {
       response.status(200).json(teams)
     })
-    .catch((error) => {
+    .catch((error) => { // if an error is generated it will be catched
       response.status(500).json({error})
     })
 });
 
 // Get all players
 app.get('/api/v1/players', (request, response) => {
-  database('players').select()
-    .then((players) => {
-      response.status(200).json(players)
+  database('players').select() // selects players table from database
+    .then((players) => { // all the objects are given a players name declaration
+      response.status(200).json(players) // the response is returned with a status 200 and all the objects are returned 
     })
-    .catch((error) => {
-      response.status(500).json({error})
+    .catch((error) => { // if an error is generated it will be catched
+      response.status(500).json({error}) // the error with status 500 is returned along with the error
     })
 });
 // Get a specific team
@@ -116,9 +116,9 @@ app.post('/api/v1/players', (request, response) => {
 // let result = name.split(' ').reverse()
 // let databaseName = result.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(', ')
 
+// Post a new team
 app.post('/api/v1/teams', (request, response) => {
   const teamInfo = request.body
-
   for(let requiredParameter of ['team', 'conference']){
 
     if(!teamInfo[requiredParameter])
@@ -135,11 +135,11 @@ app.post('/api/v1/teams', (request, response) => {
       return response.status(500).json(error)
     })
 });
-
+// Delete team
 app.delete('/api/v1/teams', (request, response) => {
-  console.log('delete')
   const idInfo = request.body
   let teamId = parseInt(idInfo.id)
+  
   for(let requiredParameter of ['id']){
     if(!idInfo[requiredParameter])
       return response
@@ -148,8 +148,16 @@ app.delete('/api/v1/teams', (request, response) => {
   }
 
   database('teams').where({id: teamId}).del()
-  .then(team => console.log('yes',team))
-    return response.status(200).json('Success team has been removed')
+  .then(team => {
+    if(team.length > 0) {
+      return response.status(202).json('Success team has been removed')
+    } else {
+      return response.status(404).json(`No team found with ${teamId}`)
+    }
+  })
+  .catch(error => {
+    return response.status(500).json({error})
+  })
 });
 
 app.listen(PORT, () => {
