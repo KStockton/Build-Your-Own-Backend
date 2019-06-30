@@ -40,7 +40,8 @@ Response example:
       position: "PG"
     }]
   }
-]```
+]
+```
 
 | Name | Type | Description |
 | ------------------------- |
