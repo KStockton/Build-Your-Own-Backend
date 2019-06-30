@@ -44,7 +44,8 @@ const teams = [
       position: "SF"
     }]
   },
-  {    team: "Brooklyn Nets",
+  { 
+    team: "Brooklyn Nets",
     conference: "Eastern",
     players: [
     {
@@ -63,7 +64,8 @@ const teams = [
       position: "C"
     }]
   },
-  {    team: "Charlotte Hornets",
+  { 
+    team: "Charlotte Hornets",
     conference: "Eastern",
     players: [
     { 
@@ -82,7 +84,8 @@ const teams = [
       position: "SF"
     }]
   },
-  {    team: "Chicago Bulls",
+  { 
+    team: "Chicago Bulls",
     conference: "Eastern",
     players: [
     { 
@@ -96,7 +99,8 @@ const teams = [
       position: "PG"
     }]
   },
-  {    team: "Cleveland Cavaliers",
+  { 
+    team: "Clevland Cavaliers",
     conference: "Eastern",
     players: [
     { 
@@ -139,7 +143,8 @@ const teams = [
       position: "PF"
     }]
   },
-  {    team: "Detroit Pistons",
+  { 
+    team: "Detroit Pistons",
     conference: "Eastern",
     players: [
     { 
