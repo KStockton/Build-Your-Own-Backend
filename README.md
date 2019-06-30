@@ -2,7 +2,7 @@
 
 Make request to the base url:
 
-```### https://nbadraft2019.herokuapp.com/ ```
+## ``` https://nbadraft2019.herokuapp.com/ ```
 
 ## Teams
 
