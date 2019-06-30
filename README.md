@@ -44,6 +44,32 @@ Response example:
 
 | Name | Type | Description |
 | ---- |:----:|:-----------:|
-| id | <Integer> | Unique ID for each team or player |
-| team | <String> | Name of the team |
-| conference | <String> | Name of the team conference |
+| id | Integer | Unique ID for each team or player |
+| team | String | Name of the team |
+| conference | String | Name of the team conference |
+
+#### Get ```api/v1/teams/:id``` (Single Team Request)
+
+The response sends a single team from the database that matches the parameter.
+
+Response from https://nbadraft2019.herokuapp.com/api/v1/teams/1 
+Example Response
+
+```
+[
+    {
+        "id": 1,
+        "team": "Atlanta Hawks",
+        "conference": "Eastern",
+        "created_at": "2019-06-28T16:40:09.469Z",
+        "updated_at": "2019-06-28T16:40:09.469Z"
+    }
+]
+```
+
+#### Post ```api/v1/teams/roster/:team_id```
+
+The response sends all players that play on a specific team from the database.
+
+Response from https://nbadraft2019.herokuapp.com/api/v1/teams/roster/denver_nuggets 
+Example Response
