@@ -44,6 +44,6 @@ Response example:
 
 | Name | Type | Description |
 | ---- |:----:|:-----------:|
-| id | <Integer> | Unique ID for each team or player |
-| team | <String> | Name of the team |
-| conference | <String> | Name of the team conference |
+| id | Integer | Unique ID for each team or player |
+| team | String | Name of the team |
+| conference | String | Name of the team conference |
