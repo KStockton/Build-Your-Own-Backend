@@ -4,7 +4,6 @@ Make request to the base url:
 
 #### ``` https://nbadraft2019.herokuapp.com/ ```
 
-
 ## Teams
 
 #### Get ```api/v1/teams``` (All Teams)
@@ -40,12 +39,11 @@ Response example:
       position: "PG"
     }]
   }
-]
+] 
 ```
 
 | Name | Type | Description |
-| ------------------------- |
+| ---- |:----:|:-----------:|
 | id | <Integer> | Unique ID for each team or player |
 | team | <String> | Name of the team |
-| player | <String> | Name of the player |
-
+| conference | <String> | Name of the team conference |
