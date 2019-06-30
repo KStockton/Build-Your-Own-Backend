@@ -39,10 +39,11 @@ Response example:
       position: "PG"
     }]
   }
-]
+] 
+```
 
 | Name | Type | Description |
-| ------------------------- |
+| ---- |:----:|:-----------:|
 | id | <Integer> | Unique ID for each team or player |
 | team | <String> | Name of the team |
-| player | <String> | Name of the player |
+| conference | <String> | Name of the team conference |
