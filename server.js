@@ -3,7 +3,7 @@ const configuration = require('./knexfile')[environment]
 const database = require('knex')(configuration);
 const express = require('express')
 const app = express();
-const PORT= process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 app.use(express.json())
 
@@ -28,7 +28,7 @@ app.get('/api/v1/players', (request, response) => {
       response.status(500).json({error})
     })
 });
-
+// Get a specific team
 app.get('/api/v1/teams/:id', (request, response) => {
   const { id } = request.params
 
@@ -38,7 +38,7 @@ app.get('/api/v1/teams/:id', (request, response) => {
     if(!teams.length) response.status(404).json(`Team not found with ${id}`)
   })
 })
-
+// Get a specific player
 app.get('/api/v1/players/:id',(request, response) => {
   const { id } = request.params
 
@@ -51,8 +51,8 @@ app.get('/api/v1/players/:id',(request, response) => {
       response.status(500).json({error})
     })
 });
-
-app.get('/api/v1/team/roster/:team_id', (request, response) => {
+// Get the team roster
+app.get('/api/v1/teams/roster/:team_id', (request, response) => {
   const { team_id } = request.params
   
   let words = team_id.toLowerCase().split('_')
@@ -77,8 +77,8 @@ app.get('/api/v1/team/roster/:team_id', (request, response) => {
       response.status(500).json(error)
     } )
 })
-
-app.post('/api/v1/player', (request, response) => {
+// Post a new player
+app.post('/api/v1/players', (request, response) => {
   const player = request.body
   let teamId
 
@@ -101,7 +101,6 @@ app.post('/api/v1/player', (request, response) => {
         position: player.position,
         team_id: teamId
        }
-
       database('players').insert(newPlayer, 'id')
         .then(player => {
           return response.status(201).json({id: player[0] })
@@ -110,7 +109,7 @@ app.post('/api/v1/player', (request, response) => {
           response.status(500).json(error)
         })
     })
-})
+});
 
 // This will put the player name in the correct format in the database
 
@@ -138,21 +137,21 @@ app.post('/api/v1/teams', (request, response) => {
 });
 
 app.delete('/api/v1/teams', (request, response) => {
+  console.log('delete')
   const idInfo = request.body
   let teamId = parseInt(idInfo.id)
-
   for(let requiredParameter of ['id']){
-    
     if(!idInfo[requiredParameter])
       return response
         .status(422)
         .send({error: `Expected format: { id : <Number> } Please include ${requiredParameter}`})
   }
-  database('teams').where('id', teamId)
-    .delete()
+
+  database('teams').where({id: teamId}).del()
+  .then(team => console.log('yes',team))
     return response.status(200).json('Success team has been removed')
 });
 
 app.listen(PORT, () => {
-  console.log(`App is running 👻 on port ${dPORT}`)
-})
+  console.log(`App is running 👻 on port ${PORT}`)
+});
