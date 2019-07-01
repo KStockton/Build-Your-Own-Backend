@@ -139,7 +139,6 @@ app.post('/api/v1/teams', (request, response) => {
 app.delete('/api/v1/teams', (request, response) => {
   const idInfo = request.body
   let teamId = parseInt(idInfo.id)
-  console.log(teamId)
   for(let requiredParameter of ['id']){
     if(!idInfo[requiredParameter])
       return response

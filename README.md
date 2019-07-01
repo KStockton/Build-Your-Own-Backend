@@ -96,7 +96,7 @@ Example Response
 
 #### Post ```api/v1/teams``` Create a new Team
 
-The user can post a new NBA team to the database. Below is the required parameters. Must be formated to JSON,
+The user can post a new NBA team to the database. Below is the required parameters. Must be formated in JSON,
 
 | Name | Type | Description |
 | ---- |:----:|:-----------:|
@@ -111,7 +111,7 @@ Post example:
 }
 ```
 
-Response from https://nbadraft2019.herokuapp.com/api/v1/teams 
+Response example from https://nbadraft2019.herokuapp.com/api/v1/teams 
 
 ```
 {
@@ -119,6 +119,11 @@ Response from https://nbadraft2019.herokuapp.com/api/v1/teams
 }
 ```
 
-### Delete ```/api/v1/teams```
+### Delete ```/api/v1/teams``` Delete a specific team and its players
 
 A user can delete a specific team and associated players
+
+Response from https://nbadraft2019.herokuapp.com/api/v1/teams 
+```Success team has been removed```
+
+## Players
