@@ -127,3 +127,15 @@ Response from https://nbadraft2019.herokuapp.com/api/v1/teams
 ```Success team has been removed```
 
 ## Players
+
+### Get ```/api/v1/players``` Get all the players in the database
+
+Each player has the following parameters: id, school, position and team_id.
+
+| Name | Type | Description |
+| ---- |:----:|:-----------:|
+| id | Integer | Unique ID for each player |
+| team_id | Integer | Id associated with the players team |
+| name | String | Name of the player |
+| school | String | School the player attended |
+| position | String | Postion the player plays in the NBA |
