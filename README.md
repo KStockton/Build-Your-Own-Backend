@@ -67,9 +67,58 @@ Example Response
 ]
 ```
 
-#### Post ```api/v1/teams/roster/:team_id```
+#### Get ```api/v1/teams/roster/:team_id```
 
-The response sends all players that play on a specific team from the database.
+The response sends all drafted players that play on a specific team from the database.
 
-Response from https://nbadraft2019.herokuapp.com/api/v1/teams/roster/denver_nuggets 
+Response from https://nbadraft2019.herokuapp.com/api/v1/teams/roster/utah_jazz 
 Example Response
+```
+[
+    {
+        "id": 62,
+        "team_id": 30,
+        "name": "Bazley, Darius",
+        "school": "Princeton High School (OH)",
+        "position": "PF",
+        "true": null
+    },
+    {
+        "id": 63,
+        "team_id": 30,
+        "name": "Wright-Foreman, Justin",
+        "school": "Hofstra",
+        "position": "PG",
+        "true": null
+    }
+]
+```
+
+#### Post ```api/v1/teams``` Create a new Team
+
+The user can post a new NBA team to the database. Below is the required parameters. Must be formated to JSON,
+
+| Name | Type | Description |
+| ---- |:----:|:-----------:|
+| team | String | Name of the team |
+| conference | String | Name of the team conference |
+
+Post example:
+```
+{ 
+	"team": "Seattle Supersonics",
+	"conference": "Western"
+}
+```
+
+Response from https://nbadraft2019.herokuapp.com/api/v1/teams 
+
+```
+{
+    "id": 34
+}
+```
+
+### Delete ```/api/v1/teams```
+
+A user can delete a specific team and associated players

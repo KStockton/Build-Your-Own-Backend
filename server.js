@@ -135,26 +135,28 @@ app.post('/api/v1/teams', (request, response) => {
       return response.status(500).json(error)
     })
 });
-// Delete team
+// Delete team and all associated players
 app.delete('/api/v1/teams', (request, response) => {
   const idInfo = request.body
   let teamId = parseInt(idInfo.id)
-  
+  console.log(teamId)
   for(let requiredParameter of ['id']){
     if(!idInfo[requiredParameter])
       return response
         .status(422)
         .send({error: `Expected format: { id : <Number> } Please include ${requiredParameter}`})
   }
-
-  database('teams').where({id: teamId}).del()
-  .then(team => {
-    if(team.length > 0) {
-      return response.status(202).json('Success team has been removed')
-    } else {
-      return response.status(404).json(`No team found with ${teamId}`)
-    }
-  })
+  database('players').where({team_id: teamId}).del()
+  .then(nbaTeamId => {
+    if(nbaTeamId > 0) {
+      database('teams').where({id: teamId}).del()
+      .then(id => {
+        return response.status(202).json('Success team has been removed')
+      })
+      } else {
+        return response.status(404).json(`No team found with ${teamId}`)
+      }
+    })
   .catch(error => {
     return response.status(500).json({error})
   })
