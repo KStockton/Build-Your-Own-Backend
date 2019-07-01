@@ -67,7 +67,7 @@ Example Response
 ]
 ```
 
-#### Get ```api/v1/teams/roster/:team_id```
+#### Get ```api/v1/teams/roster/:team_id``` (Get team roster)
 
 The response sends all drafted players that play on a specific team from the database.
 
@@ -94,7 +94,7 @@ Example Response
 ]
 ```
 
-#### Post ```api/v1/teams``` Create a new Team
+#### Post ```api/v1/teams``` (Create a new Team)
 
 The user can post a new NBA team to the database. Below is the required parameters. Must be formated in JSON,
 
@@ -139,3 +139,80 @@ Each player has the following parameters: id, school, position and team_id.
 | name | String | Name of the player |
 | school | String | School the player attended |
 | position | String | Postion the player plays in the NBA |
+
+Response example from https://nbadraft2019.herokuapp.com/api/v1/players 
+
+```
+[
+  {
+    id: 1,
+    team_id: 1,
+    name: "Hayes, Jaxson",
+    school: "Texas",
+    position: "C",
+    true: null
+  },
+  {
+    id: 2,
+    team_id: 1,
+    name: "Louzada Silva, Marcos",
+    school: "SESI Franca (Brazil)",
+    position: "SG",
+    true: null
+  }
+]
+```
+
+### Get ```/api/v1/players/:id``` Get a specific player
+
+The response will send a specific player that matches the id parameter in the request.
+
+Response example from https://nbadraft2019.herokuapp.com/api/v1/players/42
+
+```
+[
+  {
+    id: 42,
+    team_id: 20,
+    name: "Williamson, Zion",
+    school: "Duke",
+    position: "PF",
+    true: null
+  }
+]
+```
+
+### Post ```/api/v1/players/``` Add a new player
+
+A user can add a new player and connect the player to his team.
+The request requires the players name, team name, school and position.
+See below for more information.
+
+| Name | Type | Description |
+| ---- |:----:|:-----------:|
+| team | String | First and Last team name ie Seattle_Supersonics |
+| name | String | Name of the player |
+| school | String | School the player attended |
+| position | String | Postion the player plays in the NBA |
+
+Example post request 
+```
+{
+    "team": "Seattle Supersonics",
+    "name":"Jon Doe",
+    "position": "C",
+    "school": "Miami University"
+}
+```
+
+Response from  https://nbadraft2019.herokuapp.com/api/v1/players
+
+``` 
+{
+ "id": 66
+}
+```
+
+## Contributors
+
+#### Michael King-Stockton
