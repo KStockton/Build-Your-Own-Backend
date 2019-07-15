@@ -1,4 +1,4 @@
-const nbaTeams = require('../../../data.js')
+
 
 const createPlayers = (knex, player) => {
   return knex('players').insert(player)

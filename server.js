@@ -146,6 +146,7 @@ app.post('/api/v1/teams', (request, response) => {
 });
 // Delete team and all associated players
 app.delete('/api/v1/teams', (request, response) => {
+  
   const idInfo = request.body
   let teamId = parseInt(idInfo.id)
   for(let requiredParameter of ['id']){
@@ -154,12 +155,13 @@ app.delete('/api/v1/teams', (request, response) => {
         .status(422)
         .send({error: `Expected format: { id : <Number> } Please include ${requiredParameter}`})
   } // if params are missing the 422 status will send along with what the expected format should be in this method
+
   database('players').where({team_id: teamId}).del() // will first select the players table and find players that match request.body and remove them
   .then(nbaTeamId => {
     if(nbaTeamId > 0) {
       database('teams').where({id: teamId}).del() // if truthy and a team  exist with id then find and remove
       .then(id => {
-        return response.status(202).json(`Success team ${id} has been removed`) // if truthy response 202 and succes messsage
+        return response.status(204).json(`Success team ${id} has been removed`) // if truthy response 204 and succes messsage
       })
       } else {
         return response.status(404).json(`No team found with ${teamId}`) // if falsey return status 404 and team not found
