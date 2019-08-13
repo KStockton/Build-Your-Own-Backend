@@ -4,8 +4,8 @@ NBA Draft 2019 is a Backend Repository that included building a RESTful API for 
 ## Get Started : 
 
 Make request to the base url:
-
-#### View the app [here](https://nbadraft2019.herokuapp.com/)
+```https://nbadraft2019.herokuapp.com/```
+ View the app [here](https://nbadraft2019.herokuapp.com/)
 
 ## Teams
 
