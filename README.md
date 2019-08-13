@@ -1,8 +1,11 @@
+## Welcome 
+NBA Draft 2019 is a Backend Repository that included building a RESTful API for a large dataset, creating a one-to-many relational database schema design, and deploying the project to Heroku.
+
 ## Get Started :
 
 Make request to the base url:
 
-#### ``` https://nbadraft2019.herokuapp.com/ ```
+#### View the app [here](https://nbadraft2019.herokuapp.com/)
 
 ## Teams
 
